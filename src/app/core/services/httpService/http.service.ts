@@ -12,5 +12,9 @@ export class HttpService {
   post(url: any, data: any): any {
     return this.http.post(environment.apiUrl + url, data);
   }
+
+  get(url: any, data: any): any {
+    return this.http.get(environment.apiUrl + url, data);
+  }
   
 }

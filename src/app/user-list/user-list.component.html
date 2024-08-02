@@ -1,0 +1,31 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Passport</th>
+        <th>Credential ID</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>Is Deleted</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.address }}</td>
+        <td>{{ user.passport }}</td>
+        <td>{{ user.credentialId }}</td>
+        <td>{{ user.createdAt | date: 'short' }}</td>
+        <td>{{ user.updatedAt | date: 'short' }}</td>
+        <td>{{ user.isDeleted }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
