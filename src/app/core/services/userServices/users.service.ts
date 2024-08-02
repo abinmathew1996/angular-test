@@ -13,8 +13,9 @@ export class UsersService {
   public addUser(data: any): Observable<any> {
     return this.http.post(ApiEndPoint.addUser, data);
   }
-  public getAllUsers(data: any): Observable<any> {
-    return this.http.get(ApiEndPoint.getAllUsers, data);
+
+  getAllUsers(): Observable<any> {
+    return this.http.get(ApiEndPoint.getAllUsers);
   }
 
 }
