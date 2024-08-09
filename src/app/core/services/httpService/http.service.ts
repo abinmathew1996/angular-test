@@ -17,4 +17,8 @@ export class HttpService {
     return this.http.get(environment.apiUrl + url);
   }
   
+  put(url: any, data: any): any {
+    return this.http.put(environment.apiUrl + url, data);
+  }
+  
 }

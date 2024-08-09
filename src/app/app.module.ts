@@ -9,6 +9,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavNavigationBarComponent } from './core/nav-navigation-bar/nav-navigation-bar/nav-navigation-bar.component';
+import { PaginatorModule } from 'primeng/paginator';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { NavNavigationBarComponent } from './core/nav-navigation-bar/nav-navigat
     HttpClientModule,
     BrowserAnimationsModule,
     MenubarModule,
+    PaginatorModule,
+    TableModule
   ],
   providers: [
     MessageService
